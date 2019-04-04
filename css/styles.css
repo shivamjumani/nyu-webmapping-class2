@@ -1,0 +1,97 @@
+body {
+  /* This sets the background using a hex color */
+  background: #ffd6a6;
+  font-family: georgia;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  list-style-type: circle;
+  padding: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+ul li:hover {
+  text-decoration: underline;
+}
+
+.left-box {
+  background-color: #8186d5;
+}
+
+.right-box {
+  background-color: #fff9c1;
+}
+
+.asian {
+  background-image: url("https://img.huffingtonpost.com/asset/585be1aa1600002400bdf2a6.jpeg?ops=scalefit_970_noupscale");
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.65);
+  background-blend-mode: lighten;
+}
+
+.vegan {
+  background-image: url("https://7gigzxopz0uiqxo1-zippykid.netdna-ssl.com/wp-content/uploads/2018/02/shutterstock_611209634.jpg");
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.65);
+  background-blend-mode: lighten;
+}
+
+.indian {
+  background-image: url("https://static1.squarespace.com/static/57053e3059827e7cad776789/599982ef1e5b6cc138d009e5/5ace2736575d1f2b3bea6fe5/1523459898672/018-Manchester-Food-Photography.jpg");
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.65);
+  background-blend-mode: lighten;
+}
+
+.brunch {
+  background-image: url("https://static.thatsup.co/content/img/article/14/oct/h%C3%A4r-hittar-du-prisv%C3%A4rd-brunch-i-stockholm.jpg");
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.65);
+  background-blend-mode: lighten;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.left-box {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  padding-top: 0px;
+  height: 160px;
+}
+
+.right-box {
+  float: left;
+  width: 60%;
+  padding: 10px;
+  padding-top: 15px;
+  height: 160px;
+  font-size: 14px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 300px) {
+  .column {
+    width: 100%;
+  }
+}
