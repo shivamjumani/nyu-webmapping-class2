@@ -45,3 +45,28 @@ $('.jacks-wife-freda').on('click', function() {
 $('.cafe-mogador').on('click', function() {
   $('#brunch-info-box').text('Founded in 1983 in the East Village, Cafe Mogador was both an early pioneer in the NYC restaurant world and a downtown cultural hub. Serving up her signature Moroccan-inspired cuisine, founder Rivka embraced and celebrated the creative neighborhood she called home while pushing culinary boundaries.');
 });
+
+var name = 'Shivam'; // String
+
+// var age = 24; // number (if it had quotes around it, it would be a string)
+// instead of hard coding, we can read it from an input
+
+$('#ageSubmit').on('click', function() {
+  var age = $('#ageInput').val();
+  age = parseInt(age); //parse a number from the string that was read from input
+
+  if(isNaN(age)) {
+    //console.log('You did not enter a number');
+    $('.outputMessage').text('You did not enter a number!!');
+  } else {
+    var ageInADecade = age + 10;
+    $('.outputMessage').text('You will be ${age} in 10 years');
+  }
+  console.log('it read this from input', age, age.length)
+})
+//
+// console.log(name)
+//
+// var ageInADecade = age + 10;
+//
+// console.log(ageInADecade)
