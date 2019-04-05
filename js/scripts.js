@@ -60,7 +60,7 @@ $('#ageSubmit').on('click', function() {
     $('.outputMessage').text('You did not enter a number!!');
   } else {
     var ageInADecade = age + 10;
-    $('.outputMessage').text('You will be ${age} in 10 years');
+    $('.outputMessage').text(`You will be ${age} in 10 years`);
   }
   console.log('it read this from input', age, age.length)
 })
